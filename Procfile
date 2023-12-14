@@ -1,0 +1,2 @@
+web: NEW_RELIC_CONFIG_FILE=newrelic.ini newrelic-admin run-program gunicorn nightstand_backend.wsgi --worker-class=gthread --threads=10 --timeout 120
+# web: gunicorn nightstand_backend.wsgi --worker-class=gthread --threads=10 --timeout 120
